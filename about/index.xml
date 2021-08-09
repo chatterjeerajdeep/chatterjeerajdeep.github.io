@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>About on Rajdeep Chatterjee</title>
+    <title>Hello, World! on Rajdeep Chatterjee</title>
     <link>https://chatterjeerajdeep.github.io/about/</link>
-    <description>Recent content in About on Rajdeep Chatterjee</description>
+    <description>Recent content in Hello, World! on Rajdeep Chatterjee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 May 2019 12:14:34 +0600</lastBuildDate><atom:link href="https://chatterjeerajdeep.github.io/about/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Aug 2021 12:14:34 +0600</lastBuildDate><atom:link href="https://chatterjeerajdeep.github.io/about/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
