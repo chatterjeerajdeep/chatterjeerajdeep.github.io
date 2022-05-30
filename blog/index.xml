@@ -6,7 +6,11 @@
     <description>Recent content in Blog on Rajdeep Chatterjee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 May 2019 12:14:34 +0600</lastBuildDate><atom:link href="https://chatterjeerajdeep.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 May 2019 12:14:34 +0600</lastBuildDate>
+    
+	<atom:link href="https://chatterjeerajdeep.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Data - part 1</title>
       <link>https://chatterjeerajdeep.github.io/blog/data-part1/</link>
