@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Solving the Seattle Rain Problem using Bayes&#39; Theorem</title>
+      <link>https://chatterjeerajdeep.github.io/blog/seattle_rain_prob/</link>
+      <pubDate>Tue, 07 Jun 2022 12:14:34 +0600</pubDate>
+      
+      <guid>https://chatterjeerajdeep.github.io/blog/seattle_rain_prob/</guid>
+      <description>The Problem Statement  You are about to get on a plane to Seattle. You want to know if you should bring an umbrella.
+You call 3 random friends of yours who live there and ask each independently if it’s raining. Each of your friends has a 2/3 chance of telling you the truth and a 1/3 chance of messing with you by lying. All 3 friends tell you that “Yes” it is raining.</description>
+    </item>
+    
+    <item>
       <title>Data - part 1</title>
       <link>https://chatterjeerajdeep.github.io/blog/data-part1/</link>
       <pubDate>Sun, 15 Aug 2021 12:14:34 +0600</pubDate>
