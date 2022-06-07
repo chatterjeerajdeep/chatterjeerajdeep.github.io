@@ -264,7 +264,7 @@ chance of telling you the truth and a 1/3 chance of messing with you by lying. A
 </blockquote>
 <p>This question really made me think and revisit the basics and I want to explain my approach in detail. Let&rsquo;s start.</p>
 <p>I could simply go for some historical weather data to estimate the chances of rain in Seattle. In that case, I would not have put the responses from my friends to any good use. 
-But, I can actually use the responses from my friends as an additional information and update my estimates about the rain. Although this is no way is going to influence the actual outcome (whether it rains or not), but this would definitely help me make a more informed choice.</p>
+But, I can actually use the responses from my friends as an additional information and update my estimates about the rain. Although this in no way is going to influence the actual outcome (whether it rains or not), but this would definitely help me make a more informed choice.</p>
 <p>Okay, now let&rsquo;s focus on the question -</p>
 <blockquote>
 <p><em>All 3 friends tell you that <strong>“Yes” it is raining</strong>. What is the probability that <strong>it’s actually raining</strong> in Seattle?</em></p>
@@ -281,9 +281,9 @@ which implies, P(not raining in Seattle) = 1-p</p>
 </blockquote>
 <p><img src="https://drive.google.com/uc?export=view&amp;id=1sA3J6IiPZ64jUgOmc_KDZoLtDSuiCf4_" alt="Visual representation of the Prior"></p>
 <p>Now let us focus on the Evidence, that is all 3 friends say <em>&ldquo;Yes, it is raining&rdquo;</em>. If it is actually raining, and all 3 friends say &ldquo;Yes, it is raining&rdquo; - all of them tell the truth. If it is actually not raining, and all 3 friends say &ldquo;Yes, it is raining&rdquo; - all of them tell the lie. Let&rsquo;s structure this in a more technical way:</p>
-<p>P(&ldquo;Yes, Yes, Yes&rdquo; | Actually raining ) = P(Evidence | Hypothesis) = P(truth) * P(truth) * P(truth) = 8/27 = 0.296
-P(&ldquo;Yes, Yes, Yes&rdquo; | Actually not raining ) = P(Evidence | ~Hypothesis) = P(lie) * P(lie) * P(lie) = 1/27 = 0.037</p>
-<p><img src="https://drive.google.com/uc?export=view&amp;id=1yBikrOmPfpAa9G4hlMBWC4lrhgAU9he8" alt="Visual representation of the Evidence"></p>
+<pre><code>P(&quot;Yes, Yes, Yes&quot; | Actually raining ) = P(Evidence | Hypothesis) = P(truth) * P(truth) * P(truth) = 8/27 = 0.296
+</code></pre><pre><code>P(&quot;Yes, Yes, Yes&quot; | Actually not raining ) = P(Evidence | ~Hypothesis) = P(lie) * P(lie) * P(lie) = 1/27 = 0.037
+</code></pre><p><img src="https://drive.google.com/uc?export=view&amp;id=1yBikrOmPfpAa9G4hlMBWC4lrhgAU9he8" alt="Visual representation of the Evidence"></p>
 <p>Let&rsquo;s say that the total number of days under observation has been N. When we say that the prior is p, we mean that</p>
 <pre><code>p =             Number of days it rains
 	       --------------------------------------
@@ -297,7 +297,9 @@ P(&ldquo;Yes, Yes, Yes&rdquo; | Actually not raining ) = P(Evidence | ~Hypothesi
 <blockquote>
 <p>Number of days when it does not rain and all the friends say &ldquo;yes&rdquo; = (1-p) * N * 0.037</p>
 </blockquote>
+<blockquote>
 <p>Thus, Number of days when all the friends say &ldquo;yes&rdquo; = (p * N * 0.296) + ((1-p) * N * 0.037)</p>
+</blockquote>
 <p>Plugging in the values to determine our posterior, we get</p>
 <pre><code>P(Actually Raining | &quot;Yes, Yes, Yes&quot;) =  				(p * N * 0.296)
 										     -------------------------------------
