@@ -21,24 +21,5 @@
 You call 3 random friends of yours who live there and ask each independently if it’s raining. Each of your friends has a 2/3 chance of telling you the truth and a 1/3 chance of messing with you by lying. All 3 friends tell you that “Yes” it is raining.</description>
     </item>
     
-    <item>
-      <title>Data - part 1</title>
-      <link>https://chatterjeerajdeep.github.io/blog/data-part1/</link>
-      <pubDate>Sun, 15 Aug 2021 12:14:34 +0600</pubDate>
-      
-      <guid>https://chatterjeerajdeep.github.io/blog/data-part1/</guid>
-      <description>What makes data interesting? We always keep talking about data and how we belong to the age of data. But what is it that makes data so exciting? Is it about the volume or the variety of data getting generated? Is it about the different ways of applying all the maths and processing the data?
-I believe, it is the uncertainty in data, and our quest to explain this uncertain behaviour which is at the core of everything interesting about data.</description>
-    </item>
-    
-    <item>
-      <title>Principle Component Analysis</title>
-      <link>https://chatterjeerajdeep.github.io/blog/pca/</link>
-      <pubDate>Sun, 15 Aug 2021 12:14:34 +0600</pubDate>
-      
-      <guid>https://chatterjeerajdeep.github.io/blog/pca/</guid>
-      <description>Work In Progress!!</description>
-    </item>
-    
   </channel>
 </rss>
