@@ -270,25 +270,25 @@ But, I can actually use the responses from my friends as an additional informati
 <p><em>All 3 friends tell you that <strong>“Yes” it is raining</strong>. What is the probability that <strong>it’s actually raining</strong> in Seattle?</em></p>
 </blockquote>
 <p>I can define <strong>it’s actually raining</strong> as my <strong>Hypothesis</strong> and, I can also define <strong>“Yes” it is raining</strong> as an <strong>Evidence</strong>. So, technically I want to find <strong>the probability that my Hypothesis is true given the Evidence</strong>.</p>
-<p>P(Actually Raining | &ldquo;Yes, Yes, Yes&rdquo;) = 	Number of days when it rains and all the friends say &ldquo;yes&rdquo;
-&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;
-Number of days when all the friends say &ldquo;yes&rdquo;</p>
-<p>It always amazes me how the Bayes&rsquo; Theorem can be applied to practically any decision making and I think, at the core, it enforces a very rational way of thinking. Simply put, we must always start with a known idea (or assumption) and every evidence can help us to update the idea. The existing idea is called the &ldquo;prior&rdquo;, while the update made to the idea is called the &ldquo;posterior&rdquo;.</p>
+<pre><code>P(Actually Raining | &quot;Yes, Yes, Yes&quot;) = 	Number of days when it rains and all the friends say &quot;yes&quot;  
+										-------------------------------------------------------------  
+												Number of days when all the friends say &quot;yes&quot;
+</code></pre><p>It always amazes me how the Bayes&rsquo; Theorem can be applied to practically any decision making and I think, at the core, it enforces a very rational way of thinking. Simply put, we must always start with a known idea (or assumption) and every evidence can help us to update the idea. The existing idea is called the &ldquo;prior&rdquo;, while the update made to the idea is called the &ldquo;posterior&rdquo;.</p>
 <p>The prior is not mentioned for this question. So, it is really up to us to assume the chances of raining in Seattle. We may consider a 50-50 possibility, such that the prior becomes 0.5, or we may know from some source that on an average it rains 3 out of 7 days in Seattle, in which case our prior becomes 0.42. But, I want to keep it simply as p.</p>
 <blockquote>
 <p>P(raining in Seattle) = P(Hypothesis) = p
 which implies, P(not raining in Seattle) = 1-p</p>
 </blockquote>
-<p><img src="https://drive.google.com/file/d/1sA3J6IiPZ64jUgOmc_KDZoLtDSuiCf4_/view?usp=sharing" alt="Visual representation of the Prior"></p>
+<p><img src="https://drive.google.com/uc?export=view&amp;id=1sA3J6IiPZ64jUgOmc_KDZoLtDSuiCf4_" alt="Visual representation of the Prior"></p>
 <p>Now let us focus on the Evidence, that is all 3 friends say <em>&ldquo;Yes, it is raining&rdquo;</em>. If it is actually raining, and all 3 friends say &ldquo;Yes, it is raining&rdquo; - all of them tell the truth. If it is actually not raining, and all 3 friends say &ldquo;Yes, it is raining&rdquo; - all of them tell the lie. Let&rsquo;s structure this in a more technical way:</p>
 <p>P(&ldquo;Yes, Yes, Yes&rdquo; | Actually raining ) = P(Evidence | Hypothesis) = P(truth) * P(truth) * P(truth) = 8/27 = 0.296
 P(&ldquo;Yes, Yes, Yes&rdquo; | Actually not raining ) = P(Evidence | ~Hypothesis) = P(lie) * P(lie) * P(lie) = 1/27 = 0.037</p>
-<p><img src="https://drive.google.com/file/d/1yBikrOmPfpAa9G4hlMBWC4lrhgAU9he8/view?usp=sharing" alt="Visual representation of the Evidence"></p>
-<p>Let&rsquo;s say that the total number of days under observation has been N. When we say that the prior is p, we mean that 
-p =        Number of days it rains
-&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;
-Total Number of days under Observation (N)</p>
-<p>Therefore, Number of days it rains = p * N</p>
+<p><img src="https://drive.google.com/uc?export=view&amp;id=1yBikrOmPfpAa9G4hlMBWC4lrhgAU9he8" alt="Visual representation of the Evidence"></p>
+<p>Let&rsquo;s say that the total number of days under observation has been N. When we say that the prior is p, we mean that</p>
+<pre><code>p =             Number of days it rains
+	       --------------------------------------
+	Total Number of days under Observation (N)
+</code></pre><p>Therefore, Number of days it rains = p * N</p>
 <p>Since, all the 3 friends say &ldquo;yes&rdquo; <strong>29.6%</strong> of time <strong>when it rains</strong>, therefore</p>
 <blockquote>
 <p>Number of days when it rains and all the friends say &ldquo;yes&rdquo; = p * N * 0.296</p>
@@ -299,14 +299,14 @@ Total Number of days under Observation (N)</p>
 </blockquote>
 <p>Thus, Number of days when all the friends say &ldquo;yes&rdquo; = (p * N * 0.296) + ((1-p) * N * 0.037)</p>
 <p>Plugging in the values to determine our posterior, we get</p>
-<p>P(Actually Raining | &ldquo;Yes, Yes, Yes&rdquo;) =    			(p * N * 0.296)
-&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;
-(p * N * 0.296) + ((1-p) * N * 0.037)</p>
-<p>which simplifies to,</p>
-<p>P(Actually Raining | &ldquo;Yes, Yes, Yes&rdquo;) =    			(p * 0.296)
-&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-
-(p * 0.296) + ((1-p) * 0.037)</p>
-<p><img src="https://drive.google.com/file/d/17Z1Cvo9Zs_D2Pagqz4fXzTOSvz1SeSbk/view?usp=sharing" alt="Visual representation of the conditional probability"></p>
+<pre><code>P(Actually Raining | &quot;Yes, Yes, Yes&quot;) =  				(p * N * 0.296)
+										     -------------------------------------
+											(p * N * 0.296) + ((1-p) * N * 0.037
+</code></pre><p>which simplifies to,</p>
+<pre><code>P(Actually Raining | &quot;Yes, Yes, Yes&quot;) =    			(p * 0.296)
+										----------------------------------------
+											(p * 0.296) + ((1-p) * 0.037)	
+</code></pre><p><img src="https://drive.google.com/uc?export=view&amp;id=17Z1Cvo9Zs_D2Pagqz4fXzTOSvz1SeSbk" alt="Visual representation of the conditional probability"></p>
 <p>I came across this <a href="https://www.youtube.com/watch?v=HZGCoVF3YvM">wonderful explanation</a> of Bayes&rsquo; Theorem which helped me to understand and apply the concepts to solve this problem. The illustrations in this blog are inspired from the ones that are used in the video.</p>
 
     </div>
