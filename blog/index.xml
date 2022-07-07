@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Exploring Data Science Interview Questions - Day 1</title>
+      <link>https://chatterjeerajdeep.github.io/blog/exploring_ds_interview_q_1/</link>
+      <pubDate>Thu, 07 Jul 2022 12:14:34 +0600</pubDate>
+      
+      <guid>https://chatterjeerajdeep.github.io/blog/exploring_ds_interview_q_1/</guid>
+      <description>Question 1 Generate a fair coin from a biased one If there is a biased coin, it means that the probability of H and T are not equal. Let&amp;rsquo;s say that the probability for H is p. That of T would be q = (1-p).
+If we flip the biased coin 2 times, then following are the possibilities and their corresponding probabilities:
+ P(HH) = p2 P(HT) = pq P(TH) = qp P(TT) = q2</description>
+    </item>
+    
+    <item>
       <title>How to Lie with Statistics by Darell Huff - Introduction</title>
       <link>https://chatterjeerajdeep.github.io/blog/how-to-lie-with-statistics-book-discussion-introduction/</link>
       <pubDate>Thu, 09 Jun 2022 12:14:34 +0600</pubDate>
