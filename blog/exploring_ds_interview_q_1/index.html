@@ -258,30 +258,68 @@
       <h4 id="question-1">Question 1</h4>
 <h3 id="generate-a-fair-coin-from-a-biased-one">Generate a fair coin from a biased one</h3>
 <p>If there is a biased coin, it means that the probability of H and T are not equal. Let&rsquo;s say that the probability for H is p. That of T would be q = (1-p).</p>
-<p>If we flip the biased coin 2 times, then following are the possibilities and their corresponding probabilities:
-| |
-|&mdash;&mdash;&mdash;&mdash;&mdash;|
-| P(HH) = p<sup>2</sup> |
-| P(HT) = pq |
-| P(TH) = qp |
-| P(TT) = q<sup>2</sup> |</p>
+<p>If we flip the biased coin 2 times, then following are the possibilities and their corresponding probabilities:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P(HH) = p<sup>2</sup></td>
+</tr>
+<tr>
+<td>P(HT) = pq</td>
+</tr>
+<tr>
+<td>P(TH) = qp</td>
+</tr>
+<tr>
+<td>P(TT) = q<sup>2</sup></td>
+</tr>
+</tbody>
+</table>
 <p>We notice that the P(HT) and P(TH) are same. So, if we flip a coin two times and get the same result (HH or TT) we discard the trial and start fresh. But if we get opposite results (HT or TH), then we choose the first result.</p>
 <p>This is a time taking process. The more biased the coin is, the more time taking it is to get fair results. This idea was suggested by John Von Neumann. Here&rsquo;s the <a href="https://en.wikipedia.org/wiki/Fair_coin#Fair_results_from_a_biased_coin">link</a> and here&rsquo;s a <a href="https://www.xarg.org/2018/01/make-a-fair-coin-from-a-biased-coin/">simpler explanation</a></p>
 <h4 id="question-2">Question 2</h4>
 <h3 id="generate-7-integers-with-equal-probability-from-a-function-which-returns-10-with-probability-p-and-1-p">Generate 7 integers with equal probability from a function which returns 1/0 with probability p and (1-p)</h3>
 <p>Let&rsquo;s safely assume that p is neither 0 nor 1.</p>
 <p>This is an extension of the previous question. Let&rsquo;s think about solving this with the help of a fair coin. 
-If we wanted to generate 7 integers with equal probability by tossing a fair coin, we could have tossed the coin 3 times. Why? Because by tossing a coin 3 times, we can generate 2<sup>3</sup>=8 different outcomes. Each of these 8 outcomes would have equal probabilities. 
-| |
-|&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;|
-| HHH -&gt; assign 1 |
-| HHT -&gt; assign 2 |
-| HTH -&gt; assign 3 |
-| HTT -&gt; assign 4 |
-| THH -&gt; assign 5 |
-| THT -&gt; assign 6 |
-| TTH -&gt; assign 7 | 
-| TTT -&gt; ignore |</p>
+If we wanted to generate 7 integers with equal probability by tossing a fair coin, we could have tossed the coin 3 times. Why? Because by tossing a coin 3 times, we can generate 2<sup>3</sup>=8 different outcomes. Each of these 8 outcomes would have equal probabilities.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HHH -&gt; assign 1</td>
+</tr>
+<tr>
+<td>HHT -&gt; assign 2</td>
+</tr>
+<tr>
+<td>HTH -&gt; assign 3</td>
+</tr>
+<tr>
+<td>HTT -&gt; assign 4</td>
+</tr>
+<tr>
+<td>THH -&gt; assign 5</td>
+</tr>
+<tr>
+<td>THT -&gt; assign 6</td>
+</tr>
+<tr>
+<td>TTH -&gt; assign 7</td>
+</tr>
+<tr>
+<td>TTT -&gt; ignore</td>
+</tr>
+</tbody>
+</table>
 <p>Now, for a biased coin. I found 3 interesting solutions <a href="https://stats.stackexchange.com/questions/354678/brain-teaser-how-to-generate-7-integers-with-equal-probability-using-a-biased-c">here</a>.</p>
 <ol>
 <li>As the answer to the previous question suggests, we can generate a fair coin from a biased coin, by tossing the coin 2 times and then selecting the outcomes HT as H and TH as T.</li>
