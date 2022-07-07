@@ -19,7 +19,7 @@
       <guid>https://chatterjeerajdeep.github.io/blog/exploring_ds_interview_q_1/</guid>
       <description>Question 1 Generate a fair coin from a biased one If there is a biased coin, it means that the probability of H and T are not equal. Let&amp;rsquo;s say that the probability for H is p. That of T would be q = (1-p).
 If we flip the biased coin 2 times, then following are the possibilities and their corresponding probabilities:
- P(HH) = p2 P(HT) = pq P(TH) = qp P(TT) = q2</description>
+|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;| | P(HH) = p2 | | P(HT) = pq | | P(TH) = qp | | P(TT) = q2 |</description>
     </item>
     
     <item>
