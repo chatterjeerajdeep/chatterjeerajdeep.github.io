@@ -20,7 +20,7 @@
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" property="og:description" content="This is meta description.">
+  <meta name="description" property="og:description" content="A note on what is Random Forest and how it works">
   <meta name="image" property="og:image" content="/">
   <meta name="author" content="Rajdeep Chatterjee">
   <meta name="generator" content="Hugo 0.68.3" />
@@ -36,8 +36,7 @@
   
   <link rel="stylesheet" href="/css/syntax.min.css" integrity="" media="screen">
 
-  <link rel="alternate" type="application/rss+xml" href="https://chatterjeerajdeep.github.io/blog/index.xml" title="Rajdeep Chatterjee" />
-<script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.14/dist/mailgo.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.14/dist/mailgo.min.js" defer></script>
 
   <!--Favicon-->
   <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
@@ -163,114 +162,137 @@
 
 
 
+<style>
+  p {
+    margin: 0
+  }
 
-<section class="uk-margin-large-bottom">
-        <h1 class="uk-heading-large uk-text-center">Blog</h1>
-</section>
+  .people-wrap {
+    display: inline-flex;
+    margin-top: 10px;
+  }
+
+  .people-image {
+    display: block;
+    border-radius: 50%;
+     
+  }
+
+  .people {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .name {
+    margin: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #000;
+    font-family: Roboto, sans-serif;
+    line-height: 1.2;
+    margin-top: 2rem;
+  }
+
+  .content img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:30px;
+  }
+
+  p { margin-bottom: 1em; }
+
+  body p:last-child { margin-bottom: 0em; }
+
+  img.skills{
+    height: 80px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    .content img{max-width:60vw; max-height:60vh}
+
+  .content img{
+      max-width:60vw;
+      max-height:60vh
+  }
+  }
+  .content{
+      width: 90vw;
+      max-width: 1200px
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+</style>
 
 
+<section>
+  <div class="uk-container uk-margin-large-bottom uk-margin-medium-top">
+    <h1 class="uk-text-center uk-heading-medium">Random Forest</h1>
+    <p class="uk-text-center uk-text-lead">A note on what is Random Forest and how it works</p>
+    <p class="uk-text-center">Published on Jul 07, 2022</p>
+    <p class="uk-text-center">Reading time: 2 minutes.</p>
+    
 
-<section class="uk-margin-large-bottom">
-    <div class="uk-container">
-        <div class="uk-grid-small uk-child-width-1-4@s uk-text-center" uk-grid uk-height-match="target: > div > div > .card-body">
-            
+    <hr class="full-width">
+    
 
-            <div>
-                <div class="uk-card uk-card-default uk-width-1@m">
-                    <div class="card-body">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <div class="uk-width-expand">
-                                <h3 class="uk-card-title uk-margin-remove-bottom">Solving the Seattle Rain Problem using Bayes&#39; Theorem</h3>
-                                <p class="uk-text-meta uk-margin-remove-top"><time
-                                        datetime="2022-06-07 12:14:34 &#43;0600 &#43;0600">Jun 7, 2022</time></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="uk-card-body">
-                        <p>This is a step by step solution to a problem based on conditional probability that has been frequently asked in Data Science interviews</p>
-                    </div>
-                </div>
-                    <div class="uk-card-footer">
-                        <a href="/blog/seattle_rain_prob/" class="uk-button uk-button-text">Read more</a>
-                    </div>
-                </div>
-            </div>
-            
-
-            <div>
-                <div class="uk-card uk-card-default uk-width-1@m">
-                    <div class="card-body">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <div class="uk-width-expand">
-                                <h3 class="uk-card-title uk-margin-remove-bottom">How to Lie with Statistics by Darell Huff - Introduction</h3>
-                                <p class="uk-text-meta uk-margin-remove-top"><time
-                                        datetime="2022-06-09 12:14:34 &#43;0600 &#43;0600">Jun 9, 2022</time></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="uk-card-body">
-                        <p>A review and discussion of the chapters of the books</p>
-                    </div>
-                </div>
-                    <div class="uk-card-footer">
-                        <a href="/blog/how-to-lie-with-statistics-book-discussion-introduction/" class="uk-button uk-button-text">Read more</a>
-                    </div>
-                </div>
-            </div>
-            
-
-            <div>
-                <div class="uk-card uk-card-default uk-width-1@m">
-                    <div class="card-body">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <div class="uk-width-expand">
-                                <h3 class="uk-card-title uk-margin-remove-bottom">Exploring Data Science Interview Questions - Day 1</h3>
-                                <p class="uk-text-meta uk-margin-remove-top"><time
-                                        datetime="2022-07-07 12:14:34 &#43;0600 &#43;0600">Jul 7, 2022</time></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="uk-card-body">
-                        <p>4 interesting questions from Microsoft data science interviews</p>
-                    </div>
-                </div>
-                    <div class="uk-card-footer">
-                        <a href="/blog/exploring_ds_interview_q_1/" class="uk-button uk-button-text">Read more</a>
-                    </div>
-                </div>
-            </div>
-            
-
-            <div>
-                <div class="uk-card uk-card-default uk-width-1@m">
-                    <div class="card-body">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <div class="uk-width-expand">
-                                <h3 class="uk-card-title uk-margin-remove-bottom">Random Forest</h3>
-                                <p class="uk-text-meta uk-margin-remove-top"><time
-                                        datetime="2022-07-07 12:14:34 &#43;0600 &#43;0600">Jul 7, 2022</time></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="uk-card-body">
-                        <p>A note on what is Random Forest and how it works</p>
-                    </div>
-                </div>
-                    <div class="uk-card-footer">
-                        <a href="/blog/random-forest/" class="uk-button uk-button-text">Read more</a>
-                    </div>
-                </div>
-            </div>
-            
-
-        </div>
+    <div class="content">
+      <h3 id="random-forest">Random Forest</h3>
+<p>Decision Tree algorithm work great with the data that is used to create them. They are easy to build and interpret. But, they are not flexible when it comes to classifying new samples. Decision Trees tend to overfit.</p>
+<p>Random Forest is also a tree based algorithm but it is more flexible. It is also called <strong>ensamble</strong> as it represents a group of decision trees working together as a single classifier.  There are particular steps followed when creating a random forest.</p>
+<blockquote>
+<p>Step 1: Create a bootstrapped data set</p>
+</blockquote>
+<blockquote>
+<p>Bootstrapped data set mean to <strong>randomly</strong> pick up a sample from the actual dataset, <strong>with repetitions</strong>. This will make the trees less sensitive to the training data</p>
+</blockquote>
+<blockquote>
+<p>Step 2: Create a decision tree using the bootstrapped dataset but only use a random subset of variables(features) at each step
+We do this so as to avoid correlated trees. If all the decision trees have the same set of features, they will perform in the same way as one another and the results won&rsquo;t be very different.</p>
+</blockquote>
+<blockquote>
+<p>Step 3: Go back to Step 1 and repeat</p>
+</blockquote>
+<blockquote>
+<p>By following these steps, we get a wide variety of decision trees. This makes it more efficient than a single decision tree.</p>
+</blockquote>
+<p>In order to make a decision when a new sample arrives, we can perform an <strong>aggregate</strong> of the results obtained from individual decision trees.</p>
+<p><strong>B</strong>ootstrapping + <strong>agg</strong>regat<strong>ing</strong> = Bagging</p>
+<p>When we perform bootstrapping, some records may never get selected in the bootstrapped dataset. This samples are called &ldquo;out of bag samples&rdquo;. We can use this samples to evaluate our classifier&rsquo;s performance.</p>
+<h4 id="what-is-the-number-of-variables-to-be-selected-in-the-random-subset">What is the number of variables to be selected in the random subset?</h4>
+<p>This is a hyperparameter. We can change the number of variables and evaluate the resulting classifier each time and choose the value for which we get the best results. As some rules of thumb, if p is the total number of features we have, then for classification problem, we typically can choose sqr root(p) and for regression problem we can choose p/3. But these values can be changed.</p>
+<h4 id="disadvanatages-of-random-forests">Disadvanatages of Random Forests</h4>
+<ol>
+<li>Requires more computation</li>
+<li>Less interpretable than a decision tree</li>
+</ol>
+<p>Useful Resources:
+<a href="https://www.youtube.com/watch?v=v6VJ2RO66Ag">This</a> is more visual 
+<a href="https://www.youtube.com/watch?v=w-eWTxbRQcU">This</a> explains in a better way</p>
 
     </div>
+  </div>
+  </div>
 </section>
+
 
 
     </div>

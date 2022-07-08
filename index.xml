@@ -23,6 +23,16 @@ If we flip the biased coin 2 times, then following are the possibilities and the
     </item>
     
     <item>
+      <title>Random Forest</title>
+      <link>https://chatterjeerajdeep.github.io/blog/random-forest/</link>
+      <pubDate>Thu, 07 Jul 2022 12:14:34 +0600</pubDate>
+      
+      <guid>https://chatterjeerajdeep.github.io/blog/random-forest/</guid>
+      <description>Random Forest Decision Tree algorithm work great with the data that is used to create them. They are easy to build and interpret. But, they are not flexible when it comes to classifying new samples. Decision Trees tend to overfit.
+Random Forest is also a tree based algorithm but it is more flexible. It is also called ensamble as it represents a group of decision trees working together as a single classifier.</description>
+    </item>
+    
+    <item>
       <title>How to Lie with Statistics by Darell Huff - Introduction</title>
       <link>https://chatterjeerajdeep.github.io/blog/how-to-lie-with-statistics-book-discussion-introduction/</link>
       <pubDate>Thu, 09 Jun 2022 12:14:34 +0600</pubDate>
