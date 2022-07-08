@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Random Forest</title>
+      <link>https://chatterjeerajdeep.github.io/blog/random-forest/</link>
+      <pubDate>Fri, 08 Jul 2022 12:14:34 +0600</pubDate>
+      
+      <guid>https://chatterjeerajdeep.github.io/blog/random-forest/</guid>
+      <description>Random Forest Decision Tree algorithm work great with the data that is used to create them. They are easy to build and interpret. But, they are not flexible when it comes to classifying new samples. Decision Trees tend to overfit.
+Random Forest is also a tree based algorithm but it is more flexible. It is also called ensamble as it represents a group of decision trees working together as a single classifier.</description>
+    </item>
+    
+    <item>
       <title>Exploring Data Science Interview Questions - Day 1</title>
       <link>https://chatterjeerajdeep.github.io/blog/exploring_ds_interview_q_1/</link>
       <pubDate>Thu, 07 Jul 2022 12:14:34 +0600</pubDate>
@@ -20,16 +30,6 @@
       <description>Question 1 Generate a fair coin from a biased one If there is a biased coin, it means that the probability of H and T are not equal. Let&amp;rsquo;s say that the probability for H is p. That of T would be q = (1-p).
 If we flip the biased coin 2 times, then following are the possibilities and their corresponding probabilities:
         P(HH) = p2   P(HT) = pq   P(TH) = qp   P(TT) = q2    We notice that the P(HT) and P(TH) are same.</description>
-    </item>
-    
-    <item>
-      <title>Random Forest</title>
-      <link>https://chatterjeerajdeep.github.io/blog/random-forest/</link>
-      <pubDate>Thu, 07 Jul 2022 12:14:34 +0600</pubDate>
-      
-      <guid>https://chatterjeerajdeep.github.io/blog/random-forest/</guid>
-      <description>Random Forest Decision Tree algorithm work great with the data that is used to create them. They are easy to build and interpret. But, they are not flexible when it comes to classifying new samples. Decision Trees tend to overfit.
-Random Forest is also a tree based algorithm but it is more flexible. It is also called ensamble as it represents a group of decision trees working together as a single classifier.</description>
     </item>
     
     <item>
