@@ -12,6 +12,25 @@
     
     
     <item>
+      <title>Exploring Data Science Interview Questions - Day 3</title>
+      <link>https://chatterjeerajdeep.github.io/blog/exploring_ds_interview_q_3/</link>
+      <pubDate>Tue, 12 Jul 2022 12:14:34 +0600</pubDate>
+      
+      <guid>https://chatterjeerajdeep.github.io/blog/exploring_ds_interview_q_3/</guid>
+      <description>Question 1 - What are Eigenvectors and Eigenvalues? A matrix represents a linear transformation. When a vector is multiplied to a matrix, it is similar to applying a transformation to the vector, and the result is the transformed vector. If, after the transformation, the vector stays in its span, then it is called an eigenvector.
+But, due to the transformation, the vector may be stretched or squished. The amount by which it gets stretched or squished is called the eigenvalue.</description>
+    </item>
+    
+    <item>
+      <title>Exploring Data Science Interview Questions - Day 2</title>
+      <link>https://chatterjeerajdeep.github.io/blog/exploring_ds_interview_q_2/</link>
+      <pubDate>Mon, 11 Jul 2022 12:14:34 +0600</pubDate>
+      
+      <guid>https://chatterjeerajdeep.github.io/blog/exploring_ds_interview_q_2/</guid>
+      <description>Question 1 - Can you explain the difference between a Validation Set and a Test Set? What is a good model in machine learning? A model is good if it can generalize on the unseen data. When a model is trained on some data, the model is expected to perform well on that data. But in use, the model has to predict on unknown data. If a model fails to generalize, then the predictions of the model may not be of much use.</description>
+    </item>
+    
+    <item>
       <title>Random Forest</title>
       <link>https://chatterjeerajdeep.github.io/blog/random-forest/</link>
       <pubDate>Fri, 08 Jul 2022 12:14:34 +0600</pubDate>
@@ -30,6 +49,16 @@ Random Forest is also a tree based algorithm but it is more flexible. It is also
       <description>Question 1 Generate a fair coin from a biased one If there is a biased coin, it means that the probability of H and T are not equal. Let&amp;rsquo;s say that the probability for H is p. That of T would be q = (1-p).
 If we flip the biased coin 2 times, then following are the possibilities and their corresponding probabilities:
         P(HH) = p2   P(HT) = pq   P(TH) = qp   P(TT) = q2    We notice that the P(HT) and P(TH) are same.</description>
+    </item>
+    
+    <item>
+      <title>Population and Sample</title>
+      <link>https://chatterjeerajdeep.github.io/blog/population-and-sample/</link>
+      <pubDate>Thu, 07 Jul 2022 12:14:34 +0600</pubDate>
+      
+      <guid>https://chatterjeerajdeep.github.io/blog/population-and-sample/</guid>
+      <description>Population and Sample What is a population? Population is the group of things that we want information about. For example, Suppose we want to know if children below 10 years prefer to play board games or mobile games these days. Then all children below 10 years become our population.
+But we can not identify or examine every children below 10 years, as it is costly, time consuming and often practically impossible.</description>
     </item>
     
     <item>

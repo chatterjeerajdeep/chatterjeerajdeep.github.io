@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<style>
+    html {
+        height: 100vh;
+    }
+    body {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+    .footer {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+</style>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Rajdeep Chatterjee</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" property="og:description" content="Data Science and Statistics basic concepts">
+  <meta name="image" property="og:image" content="/">
+  <meta name="author" content="Rajdeep Chatterjee">
+  <meta name="generator" content="Hugo 0.68.3" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="/css/style.min.css" integrity="" media="screen">
+  
+  <link rel="stylesheet" href="/css/syntax.min.css" integrity="" media="screen">
+
+  <script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.14/dist/mailgo.min.js" defer></script>
+
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+</head>
+<body class="blog">
+    <div class="wrapper"><div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+    <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click;" style="padding-right: 3rem">
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@s">
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/"> Home
+                        </a></li>
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/about">About</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="uk-active"><a style="font-size: 18px; text-transform:none"
+                        href="/blog">Blog</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/contact">Contact</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/portfolio">Portfolio</a></li>
+                
+                
+            </ul>
+
+            <a class="uk-navbar-toggle uk-hidden@s" uk-toggle="target: #sidenav" uk-navbar-toggle-icon href="#"></a>
+
+        </div>
+    </nav>
+</div>
+
+<div id="sidenav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            
+            <li><a style="font-size: 18px" href="https://chatterjeerajdeep.github.io"> Home </a></li>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/about">About</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li class="uk-active"><a style="font-size: 18px" href="/blog">Blog</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/contact">Contact</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/portfolio">Portfolio</a></li>
+            
+            
+        </ul>
+
+    </div>
+</div>
+
+
+
+
+<style>
+  p {
+    margin: 0
+  }
+
+  .people-wrap {
+    display: inline-flex;
+    margin-top: 10px;
+  }
+
+  .people-image {
+    display: block;
+    border-radius: 50%;
+     
+  }
+
+  .people {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .name {
+    margin: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #000;
+    font-family: Roboto, sans-serif;
+    line-height: 1.2;
+    margin-top: 2rem;
+  }
+
+  .content img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:30px;
+  }
+
+  p { margin-bottom: 1em; }
+
+  body p:last-child { margin-bottom: 0em; }
+
+  img.skills{
+    height: 80px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    .content img{max-width:60vw; max-height:60vh}
+
+  .content img{
+      max-width:60vw;
+      max-height:60vh
+  }
+  }
+  .content{
+      width: 90vw;
+      max-width: 1200px
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+</style>
+
+
+<section>
+  <div class="uk-container uk-margin-large-bottom uk-margin-medium-top">
+    <h1 class="uk-text-center uk-heading-medium">Population and Sample</h1>
+    <p class="uk-text-center uk-text-lead">Data Science and Statistics basic concepts</p>
+    <p class="uk-text-center">Published on Jul 07, 2022</p>
+    <p class="uk-text-center">Reading time: 3 minutes.</p>
+    
+
+    <hr class="full-width">
+    
+
+    <div class="content">
+      <h3 id="population-and-sample">Population and Sample</h3>
+<h4 id="what-is-a-population">What is a population?</h4>
+<p>Population is the group of things that we want information about. For example, Suppose we want to know if children below 10 years prefer to play board games or mobile games these days. Then all children below 10 years become our population.</p>
+<p>But we can not identify or examine every children below 10 years, as it is costly, time consuming and often practically impossible.</p>
+<h4 id="what-is-a-sample">What is a sample?</h4>
+<p>Sample is a part of the population that we can study to draw conclusions about the population. For example, we go to schools and talk to students below 10 years. These students represent a sample of our defined population.</p>
+<h4 id="biased-sample">Biased Sample</h4>
+<p>Biased samples occur when one or more parts of the population are favoured over others. For example, while talking to kids below 10 years found in schools, we may be missing out on kids who can not afford to go to school. The preference of games for these 2 groups of kids below 10 years will be very different. So coming to a conclusion by examining either one of these groups can lead to wrong conclusions about the population.</p>
+<p>Types of Bias in Samples:</p>
+<h5 id="convenience-samples">Convenience Samples</h5>
+<p>It is easier to get access to kids in school than those who are not in school. So this bias occurs due to the convenience of getting access to a sample. In this case not everyone in the population has an equal chance of being in the sample.</p>
+<h5 id="voluntary-response-samples">Voluntary Response Samples</h5>
+<p>When some people choose to respond to a question, whereas others stay away. For example, when there&rsquo;s a question about sensitive topics like monthly income, religion etc., not all people will be interested to respond. If we come to any conclusion based on the sample who chose to respond, it will be biased.</p>
+<h4 id="what-is-a-good-sample">What is a good sample?</h4>
+<p>A good sample is one that</p>
+<ol>
+<li>is representative of the entire population</li>
+<li>gives each thing an equal chance to be a part of the sample</li>
+</ol>
+<h4 id="strategies-of-sampling">Strategies of Sampling</h4>
+<ol>
+<li>
+<p>Simple random sampling - Choosing samples at random from the population
+This can be more easily implemented when the samples are geographically concentrated.</p>
+</li>
+<li>
+<p>Stratified random sampling - Dividing the population into groups based on some distinct features, and then randomly sampling from each group. In our example, we create two groups - kids below 10 who (i) go to school and (ii) who do not go to school and then randomly sample from each group. This is however difficult to administer as a considerable amount of information about the population is required.</p>
+</li>
+<li>
+<p>Cluster sampling - Dividing the population into naturally occuring groups, and then randomly choosing a group as sample. For example, there are many states in the country and each state has kids below 10 who either go to school or do not go to school. It is practically impossible to examine each kid of each state. So, we randomly pick one state and examine all samples in that state only.</p>
+</li>
+<li>
+<p>Systematic sampling - We define a system to choose the samples. For example, we say we will talk to every 4th kid that we come across during break time in school. This is easier to administer but if there exists a pattern, then we may end up with biased samples.</p>
+</li>
+</ol>
+<p>Useful Resources:</p>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=be9e-Q-jC-0">Link1</a></li>
+</ol>
+
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+    </div>
+<footer class="footer">
+  <div class="uk-container">
+
+
+    <div class="uk-grid-small uk-child-width-1-4@m uk-text-center uk-flex-center uk-margin-medium-bottom" uk-grid>
+      <div class="uk-margin-small-bottom">
+        <h5 class="uk-margin-small-bottom">Email</h5>
+        <a href="mailto:rajdeepc013@gmail.com">rajdeepc013@gmail.com</a>
+
+      </div>
+      <div>
+        <h5 class="uk-margin-small-bottom">Address</h5>
+                  <div uk-lightbox>
+                    <a href="" data-caption="Kolkata, India"
+                      data-type="iframe">Kolkata, India</a>
+      </div>
+      </div>
+
+    </div>
+
+
+
+
+
+  <div class="footer-copyright uk-text-center" style="padding-bottom: 1rem">
+    <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1.2em;
+  width: 1.2em;" alt="Creative Commons">
+    <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1.2em;
+  width: 1.2em;" alt="CC-BY">
+    2020
+    Rajdeep Chatterjee
+
+
+  </div>
+</footer>
+
+
+<!-- JS Plugins -->
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
+
+</body>
+</html>
