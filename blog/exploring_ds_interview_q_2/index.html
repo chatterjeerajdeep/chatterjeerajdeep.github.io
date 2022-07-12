@@ -267,10 +267,12 @@
 <p>We split our data into 3 sets - <strong>train</strong>, <strong>validation</strong> and <strong>test</strong>. The <strong>train set</strong> is used to train the model. The <strong>validation set</strong> is used to choose the best performing model. The <strong>test set</strong> is used to evaluate the best performing model on completely unseen data.</p>
 <p>If the model that performs the best on the validation set, also performs well on the test set, then it&rsquo;s a model which can generalize well.</p>
 <p>But if the model performance on the validation set and the test set are very different, then we have to start all over again.</p>
-<p>Useful Resources:
-<a href="https://www.youtube.com/watch?v=swCf51Z8QDo">link1</a>
-<a href="https://www.youtube.com/watch?v=Zi-0rlM4RDs">link2</a>
-<a href="https://www.youtube.com/watch?v=MyBSkmUeIEs">link3</a></p>
+<p>Useful Resources:</p>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=swCf51Z8QDo">link1</a></li>
+<li><a href="https://www.youtube.com/watch?v=Zi-0rlM4RDs">link2</a></li>
+<li><a href="https://www.youtube.com/watch?v=MyBSkmUeIEs">link3</a></li>
+</ol>
 <h3 id="question-2---explain-cross-validation">Question 2 - Explain Cross Validation</h3>
 <h4 id="what-is-the-motivation">What is the motivation?</h4>
 <p>When we have limited amount of data, it becomes difficult to evaluate the model. A simple train/validation split creates a tradeoff between the train and the validation set, because the data used for training can not be used for validation.</p>
@@ -303,9 +305,11 @@ Importantly, each observation in the data sample is assigned to an individual gr
 </ol>
 <p>3.<a href="https://machinelearningmastery.com/train-final-machine-learning-model/">This resource</a> suggests that the purpose of cross-validation is to identify how well a setting can generalize, and once we are satisfied, we can use the entire data to train our final model.</p>
 <p>But retraining a model may be time taking. We can make use of the models built during cross validation and use them in ensemble. This will help us reduce variance.</p>
-<p>Useful Resources:
-<a href="https://www.youtube.com/watch?v=fSytzGwwBVw">link1</a>
-<a href="https://en.wikipedia.org/wiki/Cross-validation_(statistics)#:">link2</a></p>
+<p>Useful Resources:</p>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=fSytzGwwBVw">link1</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cross-validation_(statistics)#:">link2</a></li>
+</ol>
 <h3 id="question-3---explain-star-schema">Question 3 - Explain Star Schema</h3>
 <p>I need more time to understand this. Will update here once done.</p>
 <h3 id="question-4---what-is-cluster-sampling">Question 4 - What is Cluster Sampling</h3>
@@ -314,12 +318,12 @@ Importantly, each observation in the data sample is assigned to an individual gr
 <p>For example, we want to know the quality of items manufactured by a company. There are millions of items in the market and it is not possible to pick up each item and test for the quality.</p>
 <p>But we know that these items are being manufactured by 4 factories in the country. This is a natural grouping. We now choose any factory at random, and examine each item manufactured by that factory in a given day. This is cluster sampling.</p>
 <p>This will work, only when all the factories have the same status of their machineries. However, if one factory is older or not as well maintained as others, this strategy will create biased samples.</p>
-<p>More about population and other strategies of sampling in <a href="">this post</a>.</p>
+<p>More about population and other strategies of sampling in <a href="https://chatterjeerajdeep.github.io/blog/population-and-sample/">this post</a>.</p>
 <h3 id="question-5---what-is-systematic-sampling">Question 5 - What is Systematic Sampling</h3>
 <p>Systematic Sampling is one of the sampling strategies where we define a system to extract our samples.</p>
 <p>For example, we want to test the quality of items manufactured in a factory. Now in a day a factory produces lots of items. Examining each one of them may be inconvenient. So we define a system - we pick up every 10th item produced and examine that.</p>
 <p>The sample thus generated using this strategy may generate biased samples, if there is a pattern in the population. For example, if the machines generate items in a sequence, then every 10th item may not be representative of all other items.</p>
-<p>More about population and other strategies of sampling in <a href="">this post</a>.</p>
+<p>More about population and other strategies of sampling in <a href="https://chatterjeerajdeep.github.io/blog/population-and-sample/">this post</a>.</p>
 
     </div>
   </div>
